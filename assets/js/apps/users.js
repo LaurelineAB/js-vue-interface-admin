@@ -61,6 +61,23 @@ export default {
                     this.users[index].isActive = true;
                 }
             }
+        },
+
+        addUser (event) 
+        {
+            let newId = this.users.length +1;
+            let newFirstName = event.target.elements.first.value;
+            let newLastName = event.target.elements.last.value;
+            let newEmail = event.target.elements.email.value;
+            let newUser =
+            {
+                id: newId,
+                firstName: newFirstName,
+                lastName: newLastName,
+                email: newEmail,
+                isActive: true
+            };
+            this.users.push(newUser);
         }
     }
 }
