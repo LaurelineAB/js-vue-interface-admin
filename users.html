@@ -81,7 +81,7 @@
                             <td>
                                 <button @click="changeStatus" v-if="user.isActive === true" class="btn btn-secondary">Désactiver</button>
                                 <button @click="changeStatus" v-else class="btn btn-primary">Activer</button>
-                                <button @click="modifyUser(user)" class="btn btn-secondary">Modifier</button>
+                                <button @click="modifyUser(user)" class="btn btn-info modify">Modifier</button>
                             </td>
                         </tr>
                     </template>
